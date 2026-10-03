@@ -1,0 +1,16 @@
+.venv/
+.home/
+.scratch/
+.scratch_job.yfjob
+.pytest_cache/
+__pycache__/
+*.pyc
+*.egg-info/
+app/build/
+build/out/
+build/out-*.log
+build/icon.ico
+dist/
+*.pt
+# test clips are cut from private dashcam footage (people, number plates) – not published
+tests/data/

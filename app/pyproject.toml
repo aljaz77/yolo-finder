@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yolofinder"
+dynamic = ["version"]
+description = "Batch object detection for videos and photos"
+requires-python = ">=3.10"
+license = { text = "AGPL-3.0" }
+
+[project.gui-scripts]
+yolofinder-gui = "yolofinder.__main__:main"
+
+[project.scripts]
+yolofinder = "yolofinder.__main__:main"
+
+[tool.setuptools]
+packages = ["yolofinder", "yolofinder.core", "yolofinder.gui"]
+
+[tool.setuptools.package-data]
+yolofinder = ["icon.png", "icon.ico"]
+
+[tool.setuptools.dynamic]
+version = { attr = "yolofinder.__version__" }
